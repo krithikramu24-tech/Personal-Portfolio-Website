@@ -1,0 +1,40 @@
+      <div class="recommendation">
+        <span>&#8220;</span>
+        Krithik has a strong ability to translate user feedback into polished, accessible interfaces. His attention to CSS layout detail and performance tuning elevated the quality of our entire web team.
+        <span>&#8221;</span>
+      </div>
+    </div>
+  </section>
+  <!-- Recommendation Form -->
+  <section id="contact">
+    <div class="flex_center">
+      <fieldset>
+        <legend class="introduction">Leave a Recommendation</legend>
+        <input type="text" id="recommender_name" placeholder="Name (Optional)"> <br>
+        <textarea id="new_recommendation" cols="500" rows="8" placeholder="Message"></textarea>
+        <div class="flex_center">
+          <button id="recommend_btn" type="button" onclick="addRecommendation()">Submit</button>
+        </div>
+      </fieldset>
+    </div>
+  </section>
+  <!-- Home Button -->
+  <div class="iconbutton">
+    <a href="#home" aria-label="Scroll to top" title="Home">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M3 10.5 12 3l9 7.5"/>
+        <path d="M5 9.5V20a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V9.5"/>
+      </svg>
+    </a>
+  </div>
+  <!-- Confirmation Popup -->
+  <div class="popup" id="popup" role="dialog" aria-modal="true" aria-labelledby="popup_title">
+    <svg class="popup_icon" viewBox="0 0 48 48" width="44" height="44" aria-hidden="true">
+      <circle cx="24" cy="24" r="22" fill="#7600bc"/>
+      <path d="M14 25l7 7 13-14" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <h3 id="popup_title">Thanks for leaving a recommendation!</h3>
+    <button type="button" onclick="showPopup(false)">Ok</button>
+  </div>
+</body>
+</html>
